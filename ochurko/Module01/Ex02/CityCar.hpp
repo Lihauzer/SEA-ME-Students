@@ -2,7 +2,7 @@
 
 class CityCar : public Car
 {
-    protected:
+    private:
         int passangers;
     public:
         CityCar();
