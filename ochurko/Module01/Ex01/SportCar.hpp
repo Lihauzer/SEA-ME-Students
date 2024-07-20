@@ -1,0 +1,15 @@
+#include "Car.hpp"
+
+class CityCar : public Car
+{
+    private:
+        int passangers;
+    public:
+        CityCar();
+        CityCar (string make_, string model_, int year_, int passangers_);
+        ~CityCar();
+        CityCar(const CityCar & copy);
+        CityCar & operator = (const CityCar &other);
+        void SetTopspeed(int tmp);
+        void drive();
+};
